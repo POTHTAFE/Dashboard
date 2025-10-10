@@ -255,6 +255,19 @@
   opacity: 0;
   pointer-events: none;
 }
+
+    .finance-note {
+  background-color: #e6f0ff;
+  border-left: 6px solid #004080;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
   </style>
 </head>
 <body>
@@ -303,13 +316,22 @@
         </div>
       </section>
 
-      <section id="finance">
-        <h2>Finance Resources</h2>
-        <a class="link-button" href="https://pothtafe.notion.site/TAFE-Finance-286df41e796180058a9ae6c2edd94c28" target="_blank">
-          Open Finance View in Notion
-        </a>
-      </section>
+     <section id="finance">
+  <h2>Finance Resources</h2>
+  <a class="link-button" href="https://pothtafe.notion.site/TAFE-Finance-286df41e796180058a9ae6c2edd94c28" target="_blank">
+    Open Finance View in Notion
+  </a>
+       <!-- create notes like this:
+  <div class="finance-note">
+    Remember to submit all reimbursement forms by the 15th of each month.
+  </div>
 
+       Just copy the code here and replace the note field with the actual note
+       -->
+        <div class="finance-note">
+    We currently have no money in any of our accounts, or budgets set. Budgets will be decided at our next officer meeting.
+  </div>
+     </section>
       <section id="officers">
         <h2>Officers & Committee Leaders</h2>
         <table>
