@@ -29,10 +29,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('newBackgroundImage.jpeg');
-  background-size: 730px;
+  background-image: url('newBackgroundImage.png');
+  background-size: cover; /* fills the screen */
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #f9f9f9; /* fallback color */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +41,7 @@
   opacity: 1;
   transition: opacity 0.6s ease;
 }
+
 
     .password-box {
       max-width: 400px;
@@ -235,21 +237,6 @@
       font-size: 0.9rem;
       color: #666;
     }
-
-    #password-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  opacity: 1;
-  transition: opacity 0.6s ease;
-}
 
 #password-screen.fade-out {
   opacity: 0;
